@@ -1,11 +1,13 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EEE"
+    android:background="#FB8C00"
     tools:context="com.example.android.materialtest.NavigationDrawerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:layout_marginBottom="24dp"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:src="@drawable/trapani"/>
 
-</RelativeLayout>
+</FrameLayout>
