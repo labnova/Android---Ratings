@@ -11,15 +11,14 @@ import android.widget.TextView;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by innocenzo on 02/03/15.
- */
+
+
 public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.MyViewHolder> {
 
     private final LayoutInflater inflater;
-    List<information> data = Collections.emptyList();
+    List<Information> data = Collections.emptyList();
 
-    public InfoAdapter(Context context, List<information> data) {
+    public InfoAdapter(Context context, List<Information> data) {
         inflater = LayoutInflater.from(context);
         this.data = data;
     }
@@ -33,7 +32,7 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        information current = data.get(position);
+        Information current = data.get(position);
         holder.title.setText(current.title);
         holder.icon.setImageResource(current.iconId);
     }

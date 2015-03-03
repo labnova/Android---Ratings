@@ -1,7 +1,7 @@
 package com.example.android.materialtest;
 
 
-public class information {
+public class Information {
     int iconId;
     String title;
 
