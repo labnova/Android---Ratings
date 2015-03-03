@@ -72,10 +72,10 @@ public class NavigationDrawerFragment extends Fragment {
                 R.drawable.trapani_icona3,
                 R.drawable.trapani_icona4 };
         String[] titles= {"Trapani", "Marsala", "San Vito", "Mazara"};
-        for(int i=0; i < titles.length && i < icons.length; i++) {
+        for(int i=0; i < 100; i++) {
             Information current = new Information();
-            current.iconId= icons[i];
-            current.title= titles[i];
+            current.iconId= icons[i%icons.length];
+            current.title= titles[i%titles.length];
             data.add(current);
         }
 
