@@ -7,29 +7,47 @@
     android:layout_height="match_parent">
 
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.materialtest.MainActivity">
+    tools:context="com.example.android.materialtest.ratings.MainActivity">
 
     <include android:id="@+id/app_bar" layout="@layout/app_bar" />
 
-    <TextView
-        android:layout_below="@+id/app_bar"
-        android:text="@string/hello_world" android:layout_width="wrap_content"
+    <com.example.android.materialtest.tabs.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vai" />
+
+</LinearLayout>
+
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"
         android:layout_width="@dimen/nav_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:name="com.example.android.materialtest.NavigationDrawerFragment"
+        android:name="com.example.android.materialtest.ratings.NavigationDrawerFragment"
         app:layout="@layout/fragment_navigation_drawer"
         tools:layout="@layout/fragment_navigation_drawer"
 

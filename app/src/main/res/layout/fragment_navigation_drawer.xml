@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FB8C00"
-    tools:context="com.example.android.materialtest.NavigationDrawerFragment">
+    tools:context="com.example.android.materialtest.ratings.NavigationDrawerFragment">
 
 <LinearLayout
     android:id="@+id/container"
